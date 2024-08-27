@@ -2,16 +2,26 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Installation
+Follow these steps to get the project up and running
 
-```bash
+Clone the Repository
+First, clone this repository to your local machine by running this command
+git clone https://github.com/MiriamLongoyapus/Taskmaster-Frontend.git
+cd Taskmaster-Frontend
+
+Once you're in the project directory, install the necessary dependencies:
+npm install
+If you're using Yarn, you can install dependencies with yarn install
+
+After the dependencies are installed, start the development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+If you're using Yarn yarn dev
+This will start the application, and you can view it by navigating to http://localhost:3000 in your web browser.
+
+Challenges
+Initially, I had incorrectly configured the URL for my frontend to connect to the backend. However, I resolved this issue by ensuring that my endpoints were functioning properly. Previously, deleting a task was problematic. While the task was successfully removed from the backend database, it remained visible on the frontend interface until the browser was refreshed. I overcame this issue by carefully reviewing my code to identify the source of the problem.
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
